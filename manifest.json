@@ -1,24 +1,24 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mesereando",
+  "name": "Mesereando",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }	    
-  ],
-  "start_url": ".",
+    "src": "favicon.ico",
+    "type": "image/x-icon",
+    "sizes": "1024x1024 128x128 72x72 60x60"
+  },
+  {
+    "src": "logo.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+  {
+    "src": "logo.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }	  
+],
+  "start_url": "./#/Home",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
