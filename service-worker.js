@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/VianeyLaraRangel/MEX008-FE-Burger-Queen/precache-manifest.965bb2031fd3f2de19a524773e57ef4e.js"
+  "/VianeyLaraRangel/MEX008-FE-Burger-Queen/precache-manifest.1cd3d3d142821547ccae4b1809c13249.js"
 );
 
 self.addEventListener('message', (event) => {

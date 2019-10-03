@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b900c376a4afad283f29a7da1b3ffb9",
+    "revision": "b68ce30d84f34d3e05ec1ac9a9b7f28b",
     "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/index.html"
   },
   {
-    "revision": "2958c361da15bc72e7bc",
+    "revision": "59e161aeeddcddfbf29e",
     "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "ed95eef438944298b47a",
-    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.91eae1e4.chunk.css"
+    "revision": "484bc1063c4559c6aacf",
+    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.a7c80de5.chunk.css"
   },
   {
-    "revision": "2958c361da15bc72e7bc",
-    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.6475704b.chunk.js"
+    "revision": "59e161aeeddcddfbf29e",
+    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.bb934850.chunk.js"
   },
   {
-    "revision": "ed95eef438944298b47a",
-    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.1606920b.chunk.js"
+    "revision": "484bc1063c4559c6aacf",
+    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.dabc962c.chunk.js"
   },
   {
     "revision": "bd3350f4cfb934bd6212",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "afd5dee3dda904bb63815860fe6c9b72",
     "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/media/imagebackground.afd5dee3.png"
+  },
+  {
+    "revision": "ce32ba7be697ac44cf4f7c828a412fc1",
+    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/media/mesereando.ce32ba7b.png"
   },
   {
     "revision": "8933daf5f6f9935079b85556bee1f661",

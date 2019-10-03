@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.91eae1e4.chunk.css",
-    "main.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.1606920b.chunk.js",
-    "main.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.1606920b.chunk.js.map",
+    "main.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.a7c80de5.chunk.css",
+    "main.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.dabc962c.chunk.js",
+    "main.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.dabc962c.chunk.js.map",
     "runtime~main.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/runtime~main.b6481732.js",
     "runtime~main.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/runtime~main.b6481732.js.map",
     "static/css/2.266e55a5.chunk.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css",
-    "static/js/2.6475704b.chunk.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.6475704b.chunk.js",
-    "static/js/2.6475704b.chunk.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.6475704b.chunk.js.map",
+    "static/js/2.bb934850.chunk.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.bb934850.chunk.js",
+    "static/js/2.bb934850.chunk.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.bb934850.chunk.js.map",
     "index.html": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/index.html",
-    "precache-manifest.965bb2031fd3f2de19a524773e57ef4e.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/precache-manifest.965bb2031fd3f2de19a524773e57ef4e.js",
+    "precache-manifest.1cd3d3d142821547ccae4b1809c13249.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/precache-manifest.1cd3d3d142821547ccae4b1809c13249.js",
     "service-worker.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.91eae1e4.chunk.css.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.91eae1e4.chunk.css.map",
-    "static/media/App.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/media/vbnapa.ed0987fe.jpeg"
+    "static/css/main.a7c80de5.chunk.css.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.a7c80de5.chunk.css.map",
+    "static/media/App.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/media/vbnapa.ed0987fe.jpeg",
+    "static/media/mesereando.png": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/media/mesereando.ce32ba7b.png"
   }
 }
