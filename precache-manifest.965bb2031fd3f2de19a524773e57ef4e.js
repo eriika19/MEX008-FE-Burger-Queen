@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6f6d9bd2299c1028708d9987fe15952",
+    "revision": "0b900c376a4afad283f29a7da1b3ffb9",
     "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/index.html"
   },
   {
-    "revision": "81ca9b69ce87fbe4885e",
+    "revision": "2958c361da15bc72e7bc",
     "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "ce584d85606570937b84",
+    "revision": "ed95eef438944298b47a",
     "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.91eae1e4.chunk.css"
   },
   {
-    "revision": "81ca9b69ce87fbe4885e",
-    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.3486ecf4.chunk.js"
+    "revision": "2958c361da15bc72e7bc",
+    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.6475704b.chunk.js"
   },
   {
-    "revision": "ce584d85606570937b84",
-    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.9315dc30.chunk.js"
+    "revision": "ed95eef438944298b47a",
+    "url": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.1606920b.chunk.js"
   },
   {
     "revision": "bd3350f4cfb934bd6212",
