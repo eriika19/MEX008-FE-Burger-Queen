@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MEX008-FE-Burger-Queen/static/css/main.bf551140.chunk.css",
-    "main.js": "/MEX008-FE-Burger-Queen/static/js/main.470b9c6b.chunk.js",
-    "main.js.map": "/MEX008-FE-Burger-Queen/static/js/main.470b9c6b.chunk.js.map",
-    "runtime~main.js": "/MEX008-FE-Burger-Queen/static/js/runtime~main.99333e17.js",
-    "runtime~main.js.map": "/MEX008-FE-Burger-Queen/static/js/runtime~main.99333e17.js.map",
-    "static/css/2.266e55a5.chunk.css": "/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css",
-    "static/js/2.1d347627.chunk.js": "/MEX008-FE-Burger-Queen/static/js/2.1d347627.chunk.js",
-    "static/js/2.1d347627.chunk.js.map": "/MEX008-FE-Burger-Queen/static/js/2.1d347627.chunk.js.map",
-    "index.html": "/MEX008-FE-Burger-Queen/index.html",
-    "precache-manifest.e9b9c4501ca8266b94ac7cf2bb52a011.js": "/MEX008-FE-Burger-Queen/precache-manifest.e9b9c4501ca8266b94ac7cf2bb52a011.js",
-    "service-worker.js": "/MEX008-FE-Burger-Queen/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.bf551140.chunk.css.map": "/MEX008-FE-Burger-Queen/static/css/main.bf551140.chunk.css.map",
-    "static/media/App.css": "/MEX008-FE-Burger-Queen/static/media/vbnapa.ed0987fe.jpeg"
+    "main.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.91eae1e4.chunk.css",
+    "main.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.9315dc30.chunk.js",
+    "main.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/main.9315dc30.chunk.js.map",
+    "runtime~main.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/runtime~main.b6481732.js",
+    "runtime~main.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/runtime~main.b6481732.js.map",
+    "static/css/2.266e55a5.chunk.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css",
+    "static/js/2.3486ecf4.chunk.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.3486ecf4.chunk.js",
+    "static/js/2.3486ecf4.chunk.js.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/js/2.3486ecf4.chunk.js.map",
+    "index.html": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/index.html",
+    "precache-manifest.81e2551cd992685494d7220db090c2e1.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/precache-manifest.81e2551cd992685494d7220db090c2e1.js",
+    "service-worker.js": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.91eae1e4.chunk.css.map": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/css/main.91eae1e4.chunk.css.map",
+    "static/media/App.css": "/VianeyLaraRangel/MEX008-FE-Burger-Queen/static/media/vbnapa.ed0987fe.jpeg"
   }
 }
