@@ -16,9 +16,9 @@ class App extends Component {
         <Switch>
           <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
           <Route path={process.env.PUBLIC_URL + '/Menu'} component={Menu} />
+          <Route path={process.env.PUBLIC_URL + '/Kitchen'} component={Kitchen} />
           <Route path={process.env.PUBLIC_URL + '/Login'} component={Login} />
           <Route path={process.env.PUBLIC_URL + '/Getin'} component={GetIn} />
-          <Route path={process.env.PUBLIC_URL + '/Kitchen'} component={Kitchen} />
 
           <Route path={process.env.PUBLIC_URL + '*'} component={Error} />
         </Switch>

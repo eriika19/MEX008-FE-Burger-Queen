@@ -1,65 +1,151 @@
-body{
+body {
     font-family: 'Roboto', sans-serif !important;
 }
 
-.img-log{
-    margin:10px auto;
-    display:block; 
-    width: 25%
+.form-in {
+    background-image: url(../imgFED/imagebackground.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.btn-login{
-    position:absolute; 
-    width:200px; left:43%;
-    text-align:center;  
+
+.img-log {
+    margin: 10px auto;
+    display: -webkit-inline-box;
+    margin-left: 12%;
+    width: 25%;
+    margin-top: 10%;
 }
-.form-in{
-    text-align: center;
-    margin: 1rem;
-    padding: 2rem;
-    border: 100px
+
+.text-welcome {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 10%;
+    margin-top: 23px;
+}
+
+.box-btn-welcome {
+    margin-top: 23%;
+}
+
+.box-welcome {
+    background: rgba(241, 239, 239, 0.8);
+    width: 64%;
+    height: 100%;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.btn-login {
+    width: 51vw;
+    height: 9vh;
+    left: 43%;
+    display: block !important;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.box-password {
+    background: rgba(230, 230, 230, 0.5);
+    width: 36%;
+    height: 100%;
 
 }
-section{
+
+/* .h1 {
+    font-size: 2rem;
+    font-weight: 600;
+} */
+
+.box-center {
+    left: 15%;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.input-password {
+    background: #FFFFFF;
+    border: 1px solid #1C1C1C;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 226px;
+    height: 66px;
+    margin-top: 10%;
+}
+
+.box-buttons {
+    margin-top: 8%;
+}
+
+.btn-number {
+    width: 73px;
+    height: 50px;
+    margin: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: xx-large;
+}
+
+.btn-valid-password {
+    background: #23AE53;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14),
+        0px 4px 5px rgba(0, 0, 0, 0.12),
+        0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 7%;
+}
+
+
+section {
     height: 100vh;
 }
 
-.burguer{
-    background-image: url(../imgFED/imagebackground.png);  
+.burguer {
+    background-image: url(../imgFED/imagebackground.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.slate{
-    background-image: url(../imgFED/slate.jpeg);  
+.slate {
+    background-image: url(../imgFED/slate.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.pg{
-    background-image: url(../imgFED/PB.jpeg);  
+.pg {
+    background-image: url(../imgFED/PB.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.vb{
-    background-image: url(../imgFED/vbnapa.jpeg);  
+.vb {
+    background-image: url(../imgFED/vbnapa.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.bg-soft {    
-   /*  #f8f9fa */
+.bg-soft {
+    /*  #f8f9fa */
     background-color: #F7F7F7;
 }
 
 .overlay {
     width: 100vw;
     height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .transparent {
@@ -69,12 +155,12 @@ section{
 
 .nav-dark {
     background-color: #7B7162;
-    background-color: rgba(162, 162, 162, 0.65)!important;
- }
+    background-color: rgba(162, 162, 162, 0.65) !important;
+}
 
 .btn {
     font-weight: 900;
-/* background-color: #7B7162; */
+    /* background-color: #7B7162; */
 }
 
 .save {
@@ -110,29 +196,29 @@ section{
 }
 
 .dropdown-menu {
-margin: 1.2rem 0 0 !important;
-border-radius: 1.25rem !important;
-background-color: #f8f9fa !important;
+    margin: 1.2rem 0 0 !important;
+    border-radius: 1.25rem !important;
+    background-color: #f8f9fa !important;
 }
 
 .dropdown-item {
-        display: block;
-        width: 100%;
-        padding: .25rem 1.5rem;
-        clear: both;
-        font-weight: 400;
-        color: #212529;
-        text-align: inherit;
-        white-space: nowrap;
-        background-color: transparent;
-        border: 0;
-        padding: .25rem .7rem !important;
-        border-radius: 1.25rem;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    padding: .25rem .7rem !important;
+    border-radius: 1.25rem;
 }
 
 /* .dropdown-item:hover {*/
-/*     box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.18), 0px 6px 5px rgba(0, 0, 0, 0.24);*/    
-    /*    border-radius: 1.25rem;
+/*     box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.18), 0px 6px 5px rgba(0, 0, 0, 0.24);*/
+/*    border-radius: 1.25rem;
 } */
 
 .double {
@@ -156,12 +242,12 @@ background-color: #f8f9fa !important;
     overflow-y: scroll;
 }
 
-.box-header{
+.box-header {
     border-radius: 0 !important;
 }
 
 .footer-dark {
- background-color: #121416a9!important; 
+    background-color: #121416a9 !important;
 }
 
 .finish-dark {
@@ -182,16 +268,16 @@ background-color: #f8f9fa !important;
     color: white;
 }
 
-.box-one{
-    background: #E6E6E6;  
+.box-one {
+    background: #E6E6E6;
 }
 
-.box-two{
-   background: #C4C4C4;
+.box-two {
+    background: #C4C4C4;
 }
 
-.box-three{
-   background: #999999;
+.box-three {
+    background: #999999;
 }
 
 .card-img-bottom {
@@ -231,19 +317,40 @@ background-color: #f8f9fa !important;
     color: black;
 }
 
-.order-kitchen{
+.order-kitchen {
     flex-direction: column;
 }
 
-.form-control {
+.quantity {
     width: 6rem !important;
+}
+.td-quantity {
+    padding-left: 0rem !important; 
+}
+.td-icon {
+    padding: 0.48rem !important; 
+}
+
+.confirmation{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .card {
     width: 25.5rem;
 }
 
+.card-body{
+    padding: .08rem !important;
+}
+
+.product{
+    padding-right: 0rem !important; 
+    padding-left: .4rem !important; 
+}
 .total {
     background-color: rgba(0, 0, 0, 0.137); 
-    margin-bottom: 0rem !important;
+    margin-bottom: 0 !important;
+    font-size: 1.2rem;
+
 }

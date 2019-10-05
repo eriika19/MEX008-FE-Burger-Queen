@@ -10,7 +10,7 @@ export default class Boxtip extends React.Component {
     };
   }
 
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
     fetch('./data/Recommendations.json')
       .then(response => response.json())
       .then(data => {
@@ -56,7 +56,7 @@ export default class Boxtip extends React.Component {
         <div className="card-footer text-muted d-flex justify-content-center footer-dark">
           <ModalUI
             class="btn finish-dark og-hover"
-            buttonLabel={this.props.footerText}
+            buttonLabel="ABRIR ORDEN"
             title="¿A QUÉ NOMBRE VA A QUEDAR LA ORDEN?"
           />
         </div>

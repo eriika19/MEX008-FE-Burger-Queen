@@ -1,4 +1,20 @@
 import React from 'react';
+<<<<<<< HEAD
+import BoxGet from "../components/BoxGet";
+
+
+const GetIn = () => {
+    return (
+        <section>
+            <div>
+            <BoxGet/>
+            </div>    
+        </section>
+    );
+}
+
+export default GetIn;
+=======
 import {FormGroup, Label, Input, Button} from 'reactstrap';
 import mesereando from '../imgFED/mesereando.png';
 
@@ -27,3 +43,4 @@ const GetIn = () => {
   );
 };
 export default GetIn;
+>>>>>>> 1e54ba129be373f28f9794a633dedbda7bcb54d2

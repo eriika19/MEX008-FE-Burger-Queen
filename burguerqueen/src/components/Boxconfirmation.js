@@ -1,13 +1,8 @@
 import React from 'react';
-import { Table, CardImg } from 'reactstrap';
+import { Table} from 'reactstrap';
 import NumericInput from 'react-numeric-input';
 
-import Confirmation from './Confirmation';
-
-import Delete from '../assets/delete.png';
-import Edit from '../assets/edit.png';
-
-class Boxfinish extends React.Component {
+class Boxconfirmation extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -63,7 +58,7 @@ class Boxfinish extends React.Component {
 
   render() {
     return (
-      <div className="card bg-light">
+      <div className="bg-light">
         <div className="btn btn-dark btn-lg btn-block box-header">
           ORDEN DE: <p>{this.state.client.name}</p>
         </div>
@@ -82,10 +77,10 @@ class Boxfinish extends React.Component {
                 this.state.client.order.map((item, i) => (
                   <tr key={i}>
                     <th scope="row">{i + 1}</th>
-                    <td className={'product'}>{item.product}</td>
-                    <td className={'td-quantity'}>
+                    <td>{item.product}</td>
+                    <td>
                       <NumericInput
-                        className={'form-control quantity'}
+                        className={'form-control'}
                         min={0}
                         max={50}
                         value={item.quantity}
@@ -95,12 +90,6 @@ class Boxfinish extends React.Component {
                       />
                     </td>
                     <td>${item.price}</td>
-                    <td className={'td-icon'}>
-                      <CardImg width="7px" src={Delete} alt="delete" />
-                    </td>
-                    <td className={'td-icon'}>
-                      <CardImg width="7px" src={Edit} alt="edit" />
-                    </td>
                   </tr>
                 ))
               ) : (
@@ -112,8 +101,6 @@ class Boxfinish extends React.Component {
             </tbody>
           </Table>
         </div>
-
-
         <Table className={'total'}>
           <tr>
             <th></th>
@@ -123,20 +110,10 @@ class Boxfinish extends React.Component {
             <th>SUBTOTAL</th>
             <th>${this.state.client.total}</th>
           </tr>
-
-
         </Table>
-
-        <div className="card-footer text-muted d-flex justify-content-center footer-dark">
-          <Confirmation
-            class="btn finish-dark og-hover"
-            buttonLabel={this.props.footerText}
-            title="RECUERDA CONFIRMAR CON EL CLIENTE ANTES DE ENVIAR LA ORDEN A COCINA"
-          />
-        </div>
       </div>
     );
   }
 }
 
-export default Boxfinish;
+export default Boxconfirmation;

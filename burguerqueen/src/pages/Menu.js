@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonDropdown, DropdownToggle, CardImg } from 'reactstrap';
+import { ButtonDropdown, DropdownToggle, CardImg, Spinner } from 'reactstrap';
 import Nav from '../components/Navbar';
 import Boxfinish from '../components/Boxfinish';
 import ItemDropdown from '../components/ItemDropdown';
@@ -45,7 +45,7 @@ class Menu extends React.Component {
     this.setState({
       client: {
         name: clientName,
-        order: localStorage.getItem('order')
+        order: JSON.parse(localStorage.getItem('order'))
       }
     });
   }
@@ -69,33 +69,19 @@ class Menu extends React.Component {
     };
 
     newOrder.push(newProduct);
-
-    console.log(newOrder);
-    console.log(newOrder[1].price);
-    
+    //console.log(newOrder); 
     localStorage.setItem('order',  JSON.stringify(newOrder));
-
-    // console.log(newOrder);
-
-    // const orderStart = this.state.client.order;
-    // orderStart.push(newProduct);
-
-    // this.setState({
-    //   client: {
-    //     name: localStorage.getItem('myData').toUpperCase(),
-    //     order: orderStart
-    //   }
-    // });
   }
 
   render() {
-    // const {name, order} = this.state.client;
     const env = {
       user: this.state.user,
     };
 
     if (!this.state.menu) {
-      return <p>Cargando Menú...</p>;
+      return (
+        <Spinner color="info" style={{ width: '3rem', height: '3rem' }} />
+      );
     }
     return (
       <ClientProvider value={env}>
