@@ -1,8 +1,8 @@
-/* eslint react/no-multi-comp: 0, react/prop-types: 0 */
-
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import FormUI from './Form';
+
+import {Link} from 'react-router-dom';
 
 class ModalUI extends React.Component {
   constructor(props) {
@@ -24,7 +24,9 @@ class ModalUI extends React.Component {
     return (
       <div>
         <Button className={this.props.class} color="dark" onClick={this.toggle}>
+          <Link to="/MEX008-FE-Burger-Queen/Menu">
           {this.props.buttonLabel}
+          </Link>
         </Button>
         <Modal
           isOpen={this.state.modal}
