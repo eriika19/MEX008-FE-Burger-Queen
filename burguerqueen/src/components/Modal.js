@@ -23,10 +23,8 @@ class ModalUI extends React.Component {
   render() {
     return (
       <div>
-        <Button className={this.props.class} color="dark">
-          <Link to="/MEX008-FE-Burger-Queen/Menu" onClick={this.toggle}>
+        <Button className={this.props.class} color="dark" onClick={this.toggle}>
           {this.props.buttonLabel}
-          </Link>
         </Button>
         <Modal
           isOpen={this.state.modal}
