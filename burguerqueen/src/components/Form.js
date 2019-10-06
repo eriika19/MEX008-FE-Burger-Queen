@@ -15,7 +15,7 @@ class FormUI extends React.Component {
   handleClick(ev) {
     if (this.state.client.name) {
       ev.preventDefault();
-      this.props.history.push('/Menu');
+      this.props.BrowserHistory.push('/Menu');
       this.props.closeModal();
     } else {
     }
@@ -52,9 +52,11 @@ class FormUI extends React.Component {
         <Button
           type="submit"
           className="btn btn-dark save"
-          onClick={this.handleClick.bind(this)}
-        >
+          onClick={this.handleClick.bind(this)}>
+          <link to="/MEX008-FE-Burger-Queen/Menu">
           GUARDAR
+          </link>
+          
         </Button>
       </Form>
     );
