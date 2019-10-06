@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+// Link
 import { Col, Form, Input, Button } from 'reactstrap';
 
 class FormUI extends React.Component {
@@ -15,7 +16,7 @@ class FormUI extends React.Component {
   handleClick(ev) {
     if (this.state.client.name) {
       ev.preventDefault();
-      this.props.BrowserHistory.push('/Menu');
+      this.props.BrowserHistory.replace('/Menu');
       this.props.closeModal();
     } else {
     }
@@ -51,11 +52,10 @@ class FormUI extends React.Component {
         </Col>
         <Button
           type="submit"
-          className="btn btn-dark save">
-          <Link to="/MEX008-FE-Burger-Queen/Menu"
+          className="btn btn-dark save"
           onClick={this.handleClick.bind(this)}>
-            GUARDAR
-          </Link>
+            {/* GUARDAR */}
+          <Link to={/MEX008-FE-Burger-Queen/Menu}>GUARDAR</Link>
         </Button>
       </Form>
     );
