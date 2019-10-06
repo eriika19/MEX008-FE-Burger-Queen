@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route , Switch, Redirect } from 'react-router-dom';
+import { withRouter, BrowserRouter, Route , Switch, Redirect } from 'react-router-dom';
 // Link
 import { Col, Form, Input, Button } from 'reactstrap';
 import Menu from '../pages/Menu';
@@ -17,7 +17,7 @@ class FormUI extends React.Component {
   handleClick(ev) {
     if (this.state.client.name) {
       ev.preventDefault();
-      this.props.BrowserHistory.replace('/Menu');
+      this.props.BrowserHistory.push('/MEX008-FE-Burger-Queen/Menu');
       this.props.closeModal();
     } else {
     }
