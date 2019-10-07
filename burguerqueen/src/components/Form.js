@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 import { Col, Form, Input, Button } from 'reactstrap';
 import Menu from '../pages/Menu';
@@ -55,7 +55,7 @@ class FormUI extends React.Component {
             type="submit"
             className="btn btn-dark save"
             onClick={this.handleClick.bind(this)}>
-              GUARDAR
+              <Link to="/MEX008-FE-Burger-Queen/Menu">GUARDAR</Link>
           </Button>
       </Form>
     );
