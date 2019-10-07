@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter, BrowserRouter, Route , Switch, Redirect } from 'react-router-dom';
-// Link
+
 import { Col, Form, Input, Button } from 'reactstrap';
 import Menu from '../pages/Menu';
 
@@ -51,20 +51,12 @@ class FormUI extends React.Component {
             required
           />
         </Col>
-        <BrowserRouter>
           <Button
             type="submit"
             className="btn btn-dark save"
             onClick={this.handleClick.bind(this)}>
-              <Switch>
-                <Redirect 
-                from="/MEX008-FE-Burger-Queen/Home" 
-                to="/MEX008-FE-Burger-Queen/Menu"/>GUARDAR
-                <Route path="/" exact component={Menu}/>
-                <Redirect to="/"/>
-              </Switch>
+              GUARDAR
           </Button>
-        </BrowserRouter>
       </Form>
     );
   }
