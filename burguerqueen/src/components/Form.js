@@ -55,7 +55,7 @@ class FormUI extends React.Component {
             type="submit"
             className="btn btn-dark save"
             onClick={this.handleClick.bind(this)}>
-              <Link to="/MEX008-FE-Burger-Queen/Menu">GUARDAR</Link>
+              <Link to={`${this.props.match.url}/MEX008-FE-Burger-Queen/Menu`}>GUARDAR</Link>
           </Button>
       </Form>
     );
