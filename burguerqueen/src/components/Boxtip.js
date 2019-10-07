@@ -35,11 +35,9 @@ export default class Boxtip extends React.Component {
                   <tr key={i}>
                     <td>{recommendation}</td>
                   </tr>
-                ))
-              ) : 
-                (
-                  <Spinner color="info" style={{ width: '3rem', height: '3rem' }} />
-                )
+                ))) 
+              : 
+              (<Spinner color="info" style={{ width: '3rem', height: '3rem' }} />)
               }
             </tbody>
           </Table>

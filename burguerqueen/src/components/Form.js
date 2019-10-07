@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, BrowserRouter, Route , Switch, Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import { Col, Form, Input, Button } from 'reactstrap';
 import Menu from '../pages/Menu';
