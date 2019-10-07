@@ -1,11 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif !important;
 }
-
+    
 .form-in {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(../imgFED/imagebackground.png);
 }
 
 .img-log {
@@ -32,6 +33,35 @@ body {
     width: 64%;
     height: 100%;
 }
+
+p {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.btn-login {
+    width: 51vw;
+    height: 9vh;
+    left: 43%;
+    display: block !important;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.box-password {
+    background: rgba(230, 230, 230, 0.5);
+    width: 36%;
+    height: 100%;
+
+}
+
+.h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 
 .text-welcome h2 {
     margin-bottom: 1rem;
@@ -61,7 +91,7 @@ p {
     width: 36%;
     height: 100%;
 
-}
+} 
 
 .box-center {
     left: 15%;
@@ -105,9 +135,50 @@ p {
     margin-top: 7%;
 }
 
+
 section {
     height: 100vh;
 }
+
+.input-password {
+    background: #FFFFFF;
+    border: 1px solid #1C1C1C;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 226px;
+    height: 66px;
+    margin-top: 10%;
+}
+
+.box-buttons {
+    margin-top: 8%;
+}
+
+.btn-number {
+    width: 73px;
+    height: 50px;
+    margin: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: xx-large;
+}
+
+.btn-valid-password {
+    background: #23AE53;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14),
+        0px 4px 5px rgba(0, 0, 0, 0.12),
+        0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 7%;
+}
+
+section {
+    height: 100vh;
+} */
 
 .burguer {
     background-image: url(../imgFED/imagebackground.png);
@@ -210,6 +281,11 @@ section {
     padding: .25rem .7rem !important;
     border-radius: 1.25rem;
 }
+
+/* .dropdown-item:hover {*/
+/*     box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.18), 0px 6px 5px rgba(0, 0, 0, 0.24);*/
+/*    border-radius: 1.25rem;
+} */
 
 .double {
     width: 19%;
@@ -342,4 +418,5 @@ section {
     background-color: rgba(0, 0, 0, 0.137); 
     margin-bottom: 0 !important;
     font-size: 1.2rem;
+
 }

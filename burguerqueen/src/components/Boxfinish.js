@@ -104,6 +104,7 @@ class Boxfinish extends React.Component {
                     </td>
                     <td>${item.price}</td>
                     <td className={'td-icon'}>
+                      <CardImg width="7px" src={Delete} alt="delete" onClick={() => this.deleteProduct(item.product)}/>
                       <CardImg
                         width="7px"
                         src={Delete}
@@ -112,7 +113,7 @@ class Boxfinish extends React.Component {
                       />
                     </td>
                     <td className={'td-icon'}>
-                      <CardImg width="7px" src={Edit} alt="edit" />
+                      <CardImg width="7px" src={Edit} alt="edit"/>
                     </td>
                   </tr>
                 ))
@@ -135,6 +136,8 @@ class Boxfinish extends React.Component {
             <th>SUBTOTAL</th>
             <th>${this.state.client.total}</th>
           </tr>
+
+
         </Table>
 
         <div className="card-footer text-muted d-flex justify-content-center footer-dark">
