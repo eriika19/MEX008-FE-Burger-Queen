@@ -104,7 +104,6 @@ class Boxfinish extends React.Component {
                     </td>
                     <td>${item.price}</td>
                     <td className={'td-icon'}>
-                      <CardImg width="7px" src={Delete} alt="delete" onClick={() => this.deleteProduct(item.product)}/>
                       <CardImg
                         width="7px"
                         src={Delete}
