@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif !important;
 }
-    
+
 .form-in {
     display: flex;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ p {
     width: 36%;
     height: 100%;
 
-} 
+}
 
 .box-center {
     left: 15%;
@@ -135,7 +135,6 @@ p {
     margin-top: 7%;
 }
 
-
 section {
     height: 100vh;
 }
@@ -178,9 +177,9 @@ section {
 
 section {
     height: 100vh;
-} */
+}
 
-.burguer {
+*/ .burguer {
     background-image: url(../imgFED/imagebackground.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -390,14 +389,16 @@ section {
 .quantity {
     width: 7.4rem !important;
 }
+
 .td-quantity {
-    padding-left: .2rem !important; 
-}
-.td-icon {
-    padding: 0.48rem !important; 
+    padding-left: .2rem !important;
 }
 
-.confirmation{
+.td-icon {
+    padding: 0.48rem !important;
+}
+
+.confirmation {
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -406,16 +407,17 @@ section {
     width: 25.5rem;
 }
 
-.card-body{
+.card-body {
     padding: .08rem !important;
 }
 
-.product{
-    padding-right: 0rem !important; 
-    padding-left: .4rem !important; 
+.product {
+    padding-right: 0rem !important;
+    padding-left: .4rem !important;
 }
+
 .total {
-    background-color: rgba(0, 0, 0, 0.137); 
+    background-color: rgba(0, 0, 0, 0.137);
     margin-bottom: 0 !important;
     font-size: 1.2rem;
 

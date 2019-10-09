@@ -1,8 +1,9 @@
   import React from 'react';
-  import { withRouter, Link } from 'react-router-dom';
-  import { Button } from 'reactstrap';
+  import { withRouter } from 'react-router-dom';
+  import { Button, CardImg } from 'reactstrap';
   
   import logo from '../imgFED/logo.png';
+  import arrow from '../assets/arrow.png';
 
   class BoxGet extends React.Component {
     handleClick(ev) {
@@ -59,11 +60,14 @@
                   <input className={'btn-number'} type="button" value="C"></input>
                 </div>
               </div>
-              
+
               <button className={'btn-valid-password'} onClick={this.handleClick.bind(this)} >
-                <Link to="/MEX008-FE-Burger-Queen/Home">Flecha</Link>
+              <CardImg
+                        width= "12 px"
+                        src={arrow}
+                        alt="arrow"
+                      />
               </button>
-              
             </section>
           </section>
         </section>
