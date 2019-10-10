@@ -124,7 +124,7 @@ class Boxfinish extends React.Component {
             <tbody >
               {this.state.client.order ? (
                 this.state.client.order.map((item, i) => (
-                  <tr key={`${i}-tb-${this.state.version}-it-${this.state.itemVersion}`}>
+                  <tr key={`${i}-tb-${this.state.version}-td-${this.state.itemVersion}`}>
                     <th scope="row">{i + 1}</th>
                     <td className={'product'}>{item.product}</td>
                     <td className={'td-quantity'}>
