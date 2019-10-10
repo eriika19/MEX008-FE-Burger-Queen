@@ -93,7 +93,7 @@ class Menu extends React.Component {
   }
   updateMenu(){
     console.log('update menu Version');
-    this.setState({menuVersion: this.state.menuVersion + 1});
+    this.setState({version: this.state.version + 1});
   }
 
   render() {
@@ -146,7 +146,6 @@ class Menu extends React.Component {
                 menuVersion={this.state.version}
                 updateVersion={this.updateVersion.bind(this)}
                 updateMenu={this.updateMenu.bind(this)}
-
               />
               {/* {(this.state.typeFood && this.state.typeFood === element) ?
       <ItemDropdown key={i}  typefood={element} menu={this.state.menu} prices={this.state.prices.element}/> :

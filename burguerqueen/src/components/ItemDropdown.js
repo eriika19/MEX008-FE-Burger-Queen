@@ -5,12 +5,12 @@ import ItemDrop from './ItemDrop';
 export default class ItemDropdown extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       menu: '',
       prices: '',
       typeFood: '',
       subsection: '',
+      sub: '',
       version: props.menuVersion
     };
   }
@@ -24,12 +24,29 @@ export default class ItemDropdown extends React.Component {
   }
 
   setSubsection(data) {
-    
     this.setState({
       subsection: data
-    });
-    
-    this.props.updateVersion();
+  }, () => {
+    this.props.updateMenu();
+  });
+  
+    // this.setState({
+    //   subsection: data
+    // })
+
+    // callback();      
+
+
+    // if (this.state.subsection === data) {
+    //   callback();      
+    // } else {
+    //   this.setState({
+    //     subsection: data
+    //   });
+    //   console.log(this.state.subsection);
+      
+    //   callback(); 
+    // }
   }
 
   static getDerivedStateFromProps(props, state) {   
@@ -38,6 +55,7 @@ export default class ItemDropdown extends React.Component {
       prices: props.prices,
       typeFood: props.typefood,
       version: props.menuVersion, 
+      subsection: state.subsection
     };
 
   }
@@ -78,11 +96,11 @@ export default class ItemDropdown extends React.Component {
           <DropdownMenu>
             {Object.keys(this.state.menu.COMIDA).map((subsection, i) => (
               <DropdownItem
-                key={`${i}-tb-${this.state.version}`}
+                key={`${i}-tb-${this.state.version}-t-${this.state.subsection}`}
                 toggle={false}
                 data-subsection={subsection}
                 onClick={() => {
-                  this.setSubsection(subsection, this.props.updateMenu);
+                  this.setSubsection(subsection);
                 }}
               >
                 <Badge color="dark" pill>
@@ -91,7 +109,7 @@ export default class ItemDropdown extends React.Component {
               </DropdownItem>
             ))}
             <ItemDrop
-              key={`tb-${this.state.version}`}              
+              key={`tb-${this.state.version}-t-${this.state.subsection}`}              
               subsection={this.state.subsection}
               menu={this.state.menu.COMIDA[this.state.subsection]}
               prices={this.state.prices}
@@ -109,7 +127,7 @@ export default class ItemDropdown extends React.Component {
           <DropdownMenu>
             {Object.keys(this.state.menu.BEBIDAS).map((subsection, i) => (
               <DropdownItem
-                key={`${i}-td-${this.state.version}`}
+                key={`${i}-tb-${this.state.version}-t-${this.state.subsection}`}
                 toggle={false}
                 data-subsection={subsection}
                 onClick={() => {
@@ -122,7 +140,7 @@ export default class ItemDropdown extends React.Component {
               </DropdownItem>
             ))}
             <ItemDrop
-              key={`tb-${this.state.version}`}                            
+              key={`tb-${this.state.version}-t-${this.state.subsection}`}                            
               subsection={this.state.subsection}
               menu={this.state.menu.BEBIDAS[this.state.subsection]}
               prices={this.state.prices}
