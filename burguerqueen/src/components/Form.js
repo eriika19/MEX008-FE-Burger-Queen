@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 
 import { Col, Form, Input, Button } from 'reactstrap';
-import Menu from '../pages/Menu';
+
 
 class FormUI extends React.Component {
   constructor() {
