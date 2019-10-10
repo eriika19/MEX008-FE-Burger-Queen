@@ -22,9 +22,7 @@ class Menu extends React.Component {
       client: {
         name: ''
       },
-      orderVersion: 0,
-      menuVersion: 0,
-      itemVersion: 0,
+      version: 0,
 
       dropdownOpen: {}
     };
