@@ -4,7 +4,7 @@
   "description": "App for restaurant",
   "main": "server.js",
   "private": true,
-  "homepage": "https://vianeylararangel.github.io/burguerqueen/",
+  "homepage": ".",
   "dependencies": {
     "@version/react-router-v3": "^1.0.0",
     "bcryptjs": "^2.4.3",
