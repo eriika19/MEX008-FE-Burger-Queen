@@ -24,9 +24,8 @@
     "serve": "^11.2.0"
   },
   "scripts": {
-    "start": "node server",
+    "start": "react-scripts start",
     "server": "nodemon server",
-    "local": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

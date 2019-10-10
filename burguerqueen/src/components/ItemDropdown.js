@@ -27,22 +27,7 @@ export default class ItemDropdown extends React.Component {
       subsection: data
     });
   }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (prevState.subsection !== this.state.subsection) {
-  //     console.log(`Update ${this.state.subsection}`)
-  //     return (
-  //       <ItemDrop
-  //       subsection={this.state.subsection}
-  //       menu={this.state.menu.COMIDA[this.state.subsection]}
-  //       prices={this.state.prices}
-  //       addItem={this.props.addItem}
-  //     />
-  //     )
-      
-  //   }
-  // }
-
+ 
   render() {
     const { typeFood, menu } = this.state;
     if (!typeFood || !menu) {
@@ -63,7 +48,7 @@ export default class ItemDropdown extends React.Component {
             <DropdownItem
               key={`postres-items-${i}`}
               toggle={false}
-              onClick={() => this.props.addItem(item, this.state.prices[item])}
+              onClick={() => this.props.addItem(item, this.state.prices[item], this.props.updateVersion)}
             >
               <Badge color="dark" pill>
                 {item}
@@ -96,6 +81,7 @@ export default class ItemDropdown extends React.Component {
               menu={this.state.menu.COMIDA[this.state.subsection]}
               prices={this.state.prices}
               addItem={this.props.addItem}
+              updateVersion={this.props.updateVersion}
             />
           </DropdownMenu>
         </div>
@@ -125,6 +111,7 @@ export default class ItemDropdown extends React.Component {
               menu={this.state.menu.BEBIDAS[this.state.subsection]}
               prices={this.state.prices}
               addItem={this.props.addItem}
+              updateVersion={this.props.updateVersion}
             />
           </DropdownMenu>
         </div>
