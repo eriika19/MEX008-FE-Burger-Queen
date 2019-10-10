@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/MEX008-FE-Burger-Queen/static/css/main.cc5f9679.chunk.css",
-    "main.js": "/MEX008-FE-Burger-Queen/static/js/main.6c3e6b41.chunk.js",
-    "main.js.map": "/MEX008-FE-Burger-Queen/static/js/main.6c3e6b41.chunk.js.map",
-    "runtime~main.js": "/MEX008-FE-Burger-Queen/static/js/runtime~main.99333e17.js",
-    "runtime~main.js.map": "/MEX008-FE-Burger-Queen/static/js/runtime~main.99333e17.js.map",
-    "static/css/2.266e55a5.chunk.css": "/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css",
-    "static/js/2.402047e4.chunk.js": "/MEX008-FE-Burger-Queen/static/js/2.402047e4.chunk.js",
-    "static/js/2.402047e4.chunk.js.map": "/MEX008-FE-Burger-Queen/static/js/2.402047e4.chunk.js.map",
-    "index.html": "/MEX008-FE-Burger-Queen/index.html",
-    "precache-manifest.670f51d915ccdb6c730779f926824f0b.js": "/MEX008-FE-Burger-Queen/precache-manifest.670f51d915ccdb6c730779f926824f0b.js",
-    "service-worker.js": "/MEX008-FE-Burger-Queen/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/MEX008-FE-Burger-Queen/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.cc5f9679.chunk.css.map": "/MEX008-FE-Burger-Queen/static/css/main.cc5f9679.chunk.css.map",
-    "static/media/App.css": "/MEX008-FE-Burger-Queen/static/media/vbnapa.ed0987fe.jpeg",
-    "static/media/logo.png": "/MEX008-FE-Burger-Queen/static/media/logo.ef1c1594.png",
-    "static/media/mesereando.png": "/MEX008-FE-Burger-Queen/static/media/mesereando.ce32ba7b.png"
-  }
+    "main.css": "./static/css/main.c145247f.chunk.css",
+    "main.js": "./static/js/main.a6602c3a.chunk.js",
+    "main.js.map": "./static/js/main.a6602c3a.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.27cc410f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.27cc410f.js.map",
+    "static/css/2.0624914a.chunk.css": "./static/css/2.0624914a.chunk.css",
+    "static/js/2.6e7f7387.chunk.js": "./static/js/2.6e7f7387.chunk.js",
+    "static/js/2.6e7f7387.chunk.js.map": "./static/js/2.6e7f7387.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.7e5ed4f88509a38aea3dd07b0aeebe05.js": "./precache-manifest.7e5ed4f88509a38aea3dd07b0aeebe05.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "./static/css/2.0624914a.chunk.css.map",
+    "static/css/main.c145247f.chunk.css.map": "./static/css/main.c145247f.chunk.css.map",
+    "static/media/App.css": "./static/media/vbnapa.ed0987fe.jpeg",
+    "static/media/logo.png": "./static/media/logo.ef1c1594.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27cc410f.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.6e7f7387.chunk.js",
+    "static/css/main.c145247f.chunk.css",
+    "static/js/main.a6602c3a.chunk.js"
+  ]
 }
