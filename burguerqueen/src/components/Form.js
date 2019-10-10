@@ -17,7 +17,7 @@ class FormUI extends React.Component {
   handleClick(ev) {
     if (this.state.client.name) {
       ev.preventDefault();
-      this.props.BrowserHistory.push('/MEX008-FE-Burger-Queen/Menu');
+      this.props.history.push('/menu');
       this.props.closeModal();
     } else {
     }
