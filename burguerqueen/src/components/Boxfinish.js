@@ -74,10 +74,28 @@ class Boxfinish extends React.Component {
 
 
   static getDerivedStateFromProps(props, state) {
+    const order = JSON.parse(localStorage.getItem('order'));
+
+    const clientName = localStorage.getItem('clientName')
+    ? localStorage.getItem('clientName').toUpperCase()
+      : '';
+    
+      let total;
+      if (order) {
+        const orderPrices = order.map(item => {
+          return item.quantity * item.price;
+        });
+        total = orderPrices.reduce((a, b) => a + b, 0);
+      } else {
+        total = 0;
+      }
+    
     return {
       version: props.orderVersion, 
       client: {
-        order: JSON.parse(localStorage.getItem('order'))
+        name: clientName,        
+        order: order,
+        total: total
       }
     };
 
