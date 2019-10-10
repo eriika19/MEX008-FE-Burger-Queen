@@ -1,5 +1,5 @@
   import React from 'react';
-  import { withRouter } from 'react-router-dom';
+  import { withRouter, Link } from 'react-router-dom';
   import { Button, CardImg } from 'reactstrap';
   
   import logo from '../imgFED/logo.png';
@@ -62,11 +62,14 @@
               </div>
 
               <button className={'btn-valid-password'} onClick={this.handleClick.bind(this)} >
-              <CardImg
-                        width= "12 px"
-                        src={arrow}
-                        alt="arrow"
-                      />
+              <Link to="/home">
+                <CardImg
+                          width= "12 px"
+                          src={arrow}
+                          alt="arrow"
+                        />
+              </Link>
+              
               </button>
             </section>
           </section>

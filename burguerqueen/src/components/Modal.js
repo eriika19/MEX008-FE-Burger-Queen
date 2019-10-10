@@ -1,8 +1,8 @@
-/* eslint react/no-multi-comp: 0, react/prop-types: 0 */
-
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import FormUI from './Form';
+
+// import {Link} from 'react-router-dom';
 
 class ModalUI extends React.Component {
   constructor(props) {

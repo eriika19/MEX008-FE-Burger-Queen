@@ -1,7 +1,7 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
@@ -42,7 +42,7 @@ class Confirmation extends React.Component {
   handleClick(ev) {
     if (this.state.client.name) {
       ev.preventDefault();
-      this.props.history.push('/Kitchen');
+      this.props.history.push('/kitchen');
       //         this.props.closeModal();
     } else {
     }
@@ -57,8 +57,7 @@ class Confirmation extends React.Component {
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}
-          className={this.props.className}
-        >
+          className={this.props.className}>
           <ModalHeader toggle={this.toggle}>{this.props.title}</ModalHeader>
           <ModalBody>
             <Boxfinish clientName={this.state.client.name} />
@@ -67,9 +66,8 @@ class Confirmation extends React.Component {
             <Button
               type="submit"
               className="btn btn-dark save"
-              onClick={this.handleClick.bind(this)}
-            >
-              ENVIAR A COCINA
+              onClick={this.handleClick.bind(this)}>
+                <Link to={`${this.props.match.url}/MEX008-FE-Burger-Queen/Kitchen`}>ENVIAR A COCINA</Link>
             </Button>
           </ModalFooter>
         </Modal>
