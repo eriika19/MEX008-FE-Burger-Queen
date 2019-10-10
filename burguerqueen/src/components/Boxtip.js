@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'reactstrap';
+import { Table, Spinner } from 'reactstrap';
 import ModalUI from './Modal';
 
 export default class Boxtip extends React.Component {
@@ -36,11 +36,11 @@ export default class Boxtip extends React.Component {
                     <td>{recommendation}</td>
                   </tr>
                 ))
-              ) : (
-                <tr>
-                  <td> No hay recomendaciones</td>
-                </tr>
-              )}
+              ) : 
+                (
+                  <Spinner color="info" style={{ width: '3rem', height: '3rem' }} />
+                )
+              }
             </tbody>
           </Table>
           {/*       <ListGroup>

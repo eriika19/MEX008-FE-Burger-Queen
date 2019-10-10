@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
 
 import Home from './Home';
 import Menu from './Menu';
@@ -12,17 +12,18 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <Route path={process.env.PUBLIC_URL + '/Menu'} component={Menu} />
-          <Route path={process.env.PUBLIC_URL + '/Kitchen'} component={Kitchen} />
-          <Route path={process.env.PUBLIC_URL + '/Login'} component={Login} />
-          <Route path={process.env.PUBLIC_URL + '/Getin'} component={GetIn} />
+          {/* Ésta ruta funciona */}
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={GetIn} />
+          <Route exact path={process.env.PUBLIC_URL + '/Home'} component={Home} />
+          <Route exact path={process.env.PUBLIC_URL + '/Menu'} component={Menu} />
+          <Route exact path={process.env.PUBLIC_URL + '/Kitchen'} component={Kitchen} />
+          <Route exact path={process.env.PUBLIC_URL + '/Login'} component={Login} />
 
           <Route path={process.env.PUBLIC_URL + '*'} component={Error} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     );
   }
 }

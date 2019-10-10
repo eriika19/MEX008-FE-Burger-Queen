@@ -3,10 +3,10 @@ body {
 }
 
 .form-in {
-    background-image: url(../imgFED/imagebackground.png);
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(../imgFED/imagebackground.png);
 }
 
 .img-log {
@@ -35,7 +35,7 @@ body {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: -.5rem !important;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.6rem;
@@ -57,10 +57,41 @@ p {
 
 }
 
-/* .h1 {
+.h1 {
     font-size: 2rem;
     font-weight: 600;
-} */
+}
+
+
+.text-welcome h2 {
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.btn-login {
+    width: 51vw;
+    height: 9vh;
+    left: 43%;
+    display: block !important;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.box-password {
+    background: rgba(230, 230, 230, 0.5);
+    width: 36%;
+    height: 100%;
+
+}
 
 .box-center {
     left: 15%;
@@ -104,12 +135,51 @@ p {
     margin-top: 7%;
 }
 
+section {
+    height: 100vh;
+}
+
+.input-password {
+    background: #FFFFFF;
+    border: 1px solid #1C1C1C;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 226px;
+    height: 66px;
+    margin-top: 10%;
+}
+
+.box-buttons {
+    margin-top: 8%;
+}
+
+.btn-number {
+    width: 73px;
+    height: 50px;
+    margin: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: xx-large;
+}
+
+.btn-valid-password {
+    background: #23AE53;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14),
+        0px 4px 5px rgba(0, 0, 0, 0.12),
+        0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 7%;
+}
 
 section {
     height: 100vh;
 }
 
-.burguer {
+*/ .burguer {
     background-image: url(../imgFED/imagebackground.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -186,11 +256,6 @@ section {
     border-color: #60DE5D !important;
 }
 
-/* .btn-drinks {
-    max-height: 1rem;
-    font-weight: 900;
-} */
-
 .dropdown-menu.show {
     display: inherit !important;
 }
@@ -222,7 +287,7 @@ section {
 } */
 
 .double {
-    width: 90%;
+    width: 19%;
 }
 
 .card {
@@ -322,16 +387,18 @@ section {
 }
 
 .quantity {
-    width: 6rem !important;
-}
-.td-quantity {
-    padding-left: 0rem !important; 
-}
-.td-icon {
-    padding: 0.48rem !important; 
+    width: 7.4rem !important;
 }
 
-.confirmation{
+.td-quantity {
+    padding-left: .2rem !important;
+}
+
+.td-icon {
+    padding: 0.48rem !important;
+}
+
+.confirmation {
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -340,16 +407,17 @@ section {
     width: 25.5rem;
 }
 
-.card-body{
+.card-body {
     padding: .08rem !important;
 }
 
-.product{
-    padding-right: 0rem !important; 
-    padding-left: .4rem !important; 
+.product {
+    padding-right: 0rem !important;
+    padding-left: .4rem !important;
 }
+
 .total {
-    background-color: rgba(0, 0, 0, 0.137); 
+    background-color: rgba(0, 0, 0, 0.137);
     margin-bottom: 0 !important;
     font-size: 1.2rem;
 

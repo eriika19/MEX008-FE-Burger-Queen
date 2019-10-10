@@ -8,14 +8,16 @@ import Delete from '../assets/delete.png';
 import Edit from '../assets/edit.png';
 
 class Boxfinish extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       client: {
         name: '',
         order: '',
-        total: ''
-      }
+        total: '',
+      },
+      version: props.orderVersion,
+      itemVersion: props.itemVersion
     };
   }
 
@@ -43,22 +45,25 @@ class Boxfinish extends React.Component {
         order: order,
         total: total
       }
-    });
+    });  
   }
 
-  onChange(product, quantity, price) {
+
+  onChange(product, e, price) {
     const order = JSON.parse(localStorage.getItem('order'));
     const index = order.findIndex(item => item.product === product);
     order.splice(index, 1);
 
     const updateProduct = {
       product: product,
-      quantity: quantity + 1,
+      quantity: e,
       price: price
     };
     order.push(updateProduct);
 
     localStorage.setItem('order', JSON.stringify(order));
+
+    this.props.updateItem();
   }
 
   deleteProduct(product) {
@@ -67,6 +72,37 @@ class Boxfinish extends React.Component {
     order.splice(index, 1);
 
     localStorage.setItem('order', JSON.stringify(order));
+    this.props.updateVersion();
+  }
+
+
+  static getDerivedStateFromProps(props, state) {
+    const order = JSON.parse(localStorage.getItem('order'));
+
+    const clientName = localStorage.getItem('clientName')
+    ? localStorage.getItem('clientName').toUpperCase()
+      : '';
+    
+      let total;
+      if (order) {
+        const orderPrices = order.map(item => {
+          return item.quantity * item.price;
+        });
+        total = orderPrices.reduce((a, b) => a + b, 0);
+      } else {
+        total = 0;
+      }
+    
+    return {
+      version: props.orderVersion, 
+      itemVersion: props.itemVersion, 
+      client: {
+        name: clientName,        
+        order: order,
+        total: total
+      }
+    };
+
   }
 
   render() {
@@ -85,10 +121,10 @@ class Boxfinish extends React.Component {
                 <th>Costo</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody >
               {this.state.client.order ? (
                 this.state.client.order.map((item, i) => (
-                  <tr key={i}>
+                  <tr key={`${i}-tb-${this.state.version}-td-${this.state.itemVersion}`}>
                     <th scope="row">{i + 1}</th>
                     <td className={'product'}>{item.product}</td>
                     <td className={'td-quantity'}>
@@ -97,14 +133,19 @@ class Boxfinish extends React.Component {
                         min={0}
                         max={50}
                         value={item.quantity}
-                        onChange={() =>
-                          this.onChange(item.product, item.quantity, item.price)
+                        onChange={e =>
+                          this.onChange(item.product, e, item.price)
                         }
                       />
                     </td>
                     <td>${item.price}</td>
                     <td className={'td-icon'}>
-                      <CardImg width="7px" src={Delete} alt="delete" onClick={() => this.deleteProduct(item.product)}/>
+                      <CardImg
+                        width="7px"
+                        src={Delete}
+                        alt="delete"
+                        onClick={() => this.deleteProduct(item.product)}
+                      />
                     </td>
                     <td className={'td-icon'}>
                       <CardImg width="7px" src={Edit} alt="edit"/>
@@ -120,7 +161,6 @@ class Boxfinish extends React.Component {
             </tbody>
           </Table>
         </div>
-
 
         <Table className={'total'}>
           <tr>
