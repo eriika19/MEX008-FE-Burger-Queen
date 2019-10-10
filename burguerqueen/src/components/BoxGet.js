@@ -10,6 +10,12 @@
       ev.preventDefault();
       this.props.history.push('/Home');
     }
+
+    handleAdm(ev) {
+        ev.preventDefault();
+        this.props.history.push('/Kitchen');
+        //         this.props.closeModal();
+    }
     
     render() {
         return (
@@ -26,7 +32,7 @@
                 <Button className={'btn-login'} color="secondary">
                     <h4>EQUIPO</h4>
                 </Button>
-              <Button className={'btn-login'} color="secondary">
+              <Button onClick={this.handleAdm.bind(this)} className={'btn-login'} color="secondary">
                 <h4>ADMINISTRACIÓN</h4>
               </Button>
             </div>
