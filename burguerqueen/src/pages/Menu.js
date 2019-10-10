@@ -22,6 +22,7 @@ class Menu extends React.Component {
       client: {
         name: ''
       },
+      version: 0,
 
       dropdownOpen: {}
     };
@@ -59,7 +60,7 @@ class Menu extends React.Component {
     });
   }
 
-  addItem(item, price) {
+  addItem(item, price, callback) {
     const newOrder = JSON.parse(localStorage.getItem('order'));
 
     const newProduct = {
@@ -71,6 +72,12 @@ class Menu extends React.Component {
     newOrder.push(newProduct);
     //console.log(newOrder); 
     localStorage.setItem('order',  JSON.stringify(newOrder));
+    callback();
+  }
+
+  updateVersion(){
+    console.log('update Version');
+    this.setState({version: this.state.version + 1});
   }
 
   render() {
@@ -90,6 +97,8 @@ class Menu extends React.Component {
           <Boxfinish
             clientName={this.state.client.name}
             footerText="FINALIZAR"
+            orderVersion={this.state.version}
+            updateVersion={this.updateVersion.bind(this)}
           />
           {Object.keys(this.state.menu).map((option, i) => (
             <ButtonDropdown
@@ -116,6 +125,7 @@ class Menu extends React.Component {
                 menu={this.state.menu}
                 prices={this.state.prices}
                 addItem={this.addItem}
+                updateVersion={this.updateVersion.bind(this)}
               />
               {/* {(this.state.typeFood && this.state.typeFood === element) ?
       <ItemDropdown key={i}  typefood={element} menu={this.state.menu} prices={this.state.prices.element}/> :

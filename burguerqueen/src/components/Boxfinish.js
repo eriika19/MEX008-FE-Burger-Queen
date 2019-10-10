@@ -8,13 +8,14 @@ import Delete from '../assets/delete.png';
 import Edit from '../assets/edit.png';
 
 class Boxfinish extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       client: {
         name: '',
         order: '',
-        total: ''
+        total: '',
+        version: props.orderVersion
       }
     };
   }
@@ -43,8 +44,9 @@ class Boxfinish extends React.Component {
         order: order,
         total: total
       }
-    });
+    });  
   }
+
 
   onChange(product, e, price) {
     const order = JSON.parse(localStorage.getItem('order'));
@@ -67,6 +69,18 @@ class Boxfinish extends React.Component {
     order.splice(index, 1);
 
     localStorage.setItem('order', JSON.stringify(order));
+    this.props.updateVersion();
+  }
+
+
+  static getDerivedStateFromProps(props, state) {
+    return {
+      version: props.orderVersion, 
+      client: {
+        order: JSON.parse(localStorage.getItem('order'))
+      }
+    };
+
   }
 
   render() {
@@ -85,10 +99,10 @@ class Boxfinish extends React.Component {
                 <th>Costo</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody >
               {this.state.client.order ? (
                 this.state.client.order.map((item, i) => (
-                  <tr key={i}>
+                  <tr key={`${i}-tb-${this.state.version}`}>
                     <th scope="row">{i + 1}</th>
                     <td className={'product'}>{item.product}</td>
                     <td className={'td-quantity'}>
@@ -104,7 +118,6 @@ class Boxfinish extends React.Component {
                     </td>
                     <td>${item.price}</td>
                     <td className={'td-icon'}>
-                      {/* <CardImg width="7px" src={Delete} alt="delete" onClick={() => this.deleteProduct(item.product)}/> */}
                       <CardImg
                         width="7px"
                         src={Delete}
