@@ -28,6 +28,21 @@ export default class ItemDropdown extends React.Component {
     });
   }
 
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (prevState.subsection !== this.state.subsection) {
+  //     console.log(`Update ${this.state.subsection}`)
+  //     return (
+  //       <ItemDrop
+  //       subsection={this.state.subsection}
+  //       menu={this.state.menu.COMIDA[this.state.subsection]}
+  //       prices={this.state.prices}
+  //       addItem={this.props.addItem}
+  //     />
+  //     )
+      
+  //   }
+  // }
+
   render() {
     const { typeFood, menu } = this.state;
     if (!typeFood || !menu) {

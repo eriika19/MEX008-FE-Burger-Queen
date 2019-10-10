@@ -50,6 +50,12 @@ class Menu extends React.Component {
     });
   }
 
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (prevState.textProvid) {
+      
+  //   }
+  // }
+
   toggle(element) {
     this.setState({
       dropdownOpen: {
