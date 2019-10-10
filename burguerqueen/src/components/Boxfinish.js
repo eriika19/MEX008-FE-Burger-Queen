@@ -15,8 +15,9 @@ class Boxfinish extends React.Component {
         name: '',
         order: '',
         total: '',
-        version: props.orderVersion
-      }
+      },
+      version: props.orderVersion,
+      itemVersion: props.itemVersion
     };
   }
 
@@ -61,6 +62,8 @@ class Boxfinish extends React.Component {
     order.push(updateProduct);
 
     localStorage.setItem('order', JSON.stringify(order));
+
+    this.props.updateItem();
   }
 
   deleteProduct(product) {
@@ -92,6 +95,7 @@ class Boxfinish extends React.Component {
     
     return {
       version: props.orderVersion, 
+      itemVersion: props.itemVersion, 
       client: {
         name: clientName,        
         order: order,
@@ -120,7 +124,7 @@ class Boxfinish extends React.Component {
             <tbody >
               {this.state.client.order ? (
                 this.state.client.order.map((item, i) => (
-                  <tr key={`${i}-tb-${this.state.version}`}>
+                  <tr key={`${i}-tb-${this.state.version}-it-${this.state.itemVersion}`}>
                     <th scope="row">{i + 1}</th>
                     <td className={'product'}>{item.product}</td>
                     <td className={'td-quantity'}>

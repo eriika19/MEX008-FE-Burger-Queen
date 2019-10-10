@@ -10,7 +10,7 @@ export default class ItemDropdown extends React.Component {
       menu: '',
       prices: '',
       typeFood: '',
-      subsection: ''
+      subsection: '',
     };
   }
 
@@ -26,6 +26,34 @@ export default class ItemDropdown extends React.Component {
     this.setState({
       subsection: data
     });
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    const order = JSON.parse(localStorage.getItem('order'));
+
+    const clientName = localStorage.getItem('clientName')
+    ? localStorage.getItem('clientName').toUpperCase()
+      : '';
+    
+      let total;
+      if (order) {
+        const orderPrices = order.map(item => {
+          return item.quantity * item.price;
+        });
+        total = orderPrices.reduce((a, b) => a + b, 0);
+      } else {
+        total = 0;
+      }
+    
+    return {
+      version: props.orderVersion, 
+      client: {
+        name: clientName,        
+        order: order,
+        total: total
+      }
+    };
+
   }
  
   render() {
