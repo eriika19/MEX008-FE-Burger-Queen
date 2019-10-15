@@ -42,7 +42,7 @@ class Confirmation extends React.Component {
   handleClick(ev) {
     if (this.state.client.name) {
       ev.preventDefault();
-      this.props.history.push('/Kitchen');
+      this.props.history.push('/Home');
       //         this.props.closeModal();
     } else {
     }
@@ -70,6 +70,13 @@ class Confirmation extends React.Component {
               onClick={this.handleClick.bind(this)}
             >
               ENVIAR A COCINA
+            </Button>
+            <Button
+              type="submit"
+              className="btn btn-secondary save"
+              onClick={this.toggle}
+            >
+              CANCELAR
             </Button>
           </ModalFooter>
         </Modal>

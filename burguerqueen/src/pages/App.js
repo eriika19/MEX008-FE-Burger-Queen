@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
 
 import Home from './Home';
 import Menu from './Menu';
-import Login from './Login';
 import GetIn from './GetIn';
 import Kitchen from './Kitchen';
 import Error from './Error404';
@@ -12,17 +11,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <Route path={process.env.PUBLIC_URL + '/Menu'} component={Menu} />
-          <Route path={process.env.PUBLIC_URL + '/Kitchen'} component={Kitchen} />
-          <Route path={process.env.PUBLIC_URL + '/Login'} component={Login} />
-          <Route path={process.env.PUBLIC_URL + '/Getin'} component={GetIn} />
-
-          <Route path={process.env.PUBLIC_URL + '*'} component={Error} />
-        </Switch>
-      </BrowserRouter>
+      <Router basename={window.location.pathname || ''} >
+      <Switch>
+      <Route exact path="/" render={props => < GetIn />}></Route>
+      <Route exact path="/Home" render={props => < Home />}></Route>
+      <Route exact path="/Menu" render={props => < Menu />}></Route>
+      <Route exact path="/Kitchen" render={props => < Kitchen />}></Route>
+      <Route exact path="/Error" render={props => < Error />}></Route>
+      </Switch>
+      </Router>
     );
   }
 }

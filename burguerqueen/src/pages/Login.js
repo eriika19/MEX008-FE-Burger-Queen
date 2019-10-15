@@ -7,7 +7,7 @@ const Login = () => {
     <seccion className="login">
       <div>
         <img className={"img-log"} src={mesereando} alt="logo" />
-        <Button className="btn-login" color="secondary">
+        <Button className={"btn-login"} color="secondary">
           INICIA SESIÓN
         </Button>
       </div>

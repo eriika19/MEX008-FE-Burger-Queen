@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table} from 'reactstrap';
+import {Table} from 'reactstrap';
 import NumericInput from 'react-numeric-input';
 
 class Boxconfirmation extends React.Component {
@@ -101,6 +101,7 @@ class Boxconfirmation extends React.Component {
             </tbody>
           </Table>
         </div>
+        
         <Table className={'total'}>
           <tr>
             <th></th>

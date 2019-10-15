@@ -30,8 +30,8 @@ class Cardkitchen extends React.Component {
               <th scope="row">3</th>
               <td>MARIANA</td>
               <td>1</td>
-              <td>SOBERBIA</td>
-              <td>13:00</td>
+              <td>HELL GIRL</td>
+              <td>12:40</td>
               <td>00:00</td>
             </tr>
             <tr className="p-3 mb-2 bg-success text-white">
@@ -39,7 +39,7 @@ class Cardkitchen extends React.Component {
               <td>ADRIANA</td>
               <td>2</td>
               <td>LUJURIA</td>
-              <td>13:00</td>
+              <td>12:33</td>
               <td>00:00</td>
             </tr>
             <tr className="p-3 mb-2 bg-secondary text-white">

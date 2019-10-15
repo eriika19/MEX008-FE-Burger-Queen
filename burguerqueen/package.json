@@ -1,37 +1,35 @@
 {
-  "name": "burguerqueen",
+  "name": "mesereando",
   "version": "0.1.0",
   "description": "App for restaurant",
-  "main": "server.js",
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "@version/react-router-v3": "^1.0.0",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.3.1",
-    "config": "^3.2.2",
+    "config": "^3.2.3",
     "express-validator": "^6.2.0",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "mongoose": "^5.7.3",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-numeric-input": "^2.2.3",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
     "reactstrap": "^8.0.1",
     "request": "^2.88.0",
     "serve": "^11.2.0"
   },
   "scripts": {
-    "start": "node server",
+    "start": "react-scripts start",
     "server": "nodemon server",
-    "local": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "lint": "eslint ./",
-    "lint:fix": "eslint ./ --fix"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,17 +50,17 @@
     "concurrently": "^4.1.2",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react": "^7.16.0",
     "gh-pages": "^2.1.1",
     "husky": "^3.0.8",
     "lint-staged": "^9.4.1",
-    "nodemon": "^1.19.2",
+    "nodemon": "^1.19.3",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
-    "ws": "3.3.2"
+    "ws": "7.1.2"
   }
 }
