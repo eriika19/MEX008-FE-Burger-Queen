@@ -63,34 +63,6 @@ class Cardkitchen extends React.Component {
           </thead>
         </Table>
       </div>
-
-      //     <div className="orderkitchen">
-      //   <Card body inverse style={{ backgroundColor: '#B6B6B6', borderColor: '#B6B6B6' }}>
-      //   <CardHeader>ORDEN MARIANA</CardHeader>
-      //     <CardTitle tag="h3">1 LUJURIA</CardTitle>
-      //     <CardTitle tag="h3">1 SOBERBIA</CardTitle>
-      //     <CardText>
-      //     <small className="text-muted">13:00-</small>
-      //     <small className="text-muted">13:20</small>
-      //     </CardText>
-      //   </Card>
-      //   <Card body inverse style={{ backgroundColor: '#60DE5D', borderColor: '#60DE5D' }}>
-      //   <CardHeader>ORDEN ADRIANA</CardHeader>
-      //     <CardTitle tag="h3">1 LUJURIA</CardTitle>
-      //     <CardText>
-      //     <small className="text-muted">13:00-</small>
-      //     <small className="text-muted">13:00</small>
-      //     </CardText>
-      //   </Card>
-      //   <Card body outline color="secondary">
-      //   <CardHeader>ORDEN LORENA</CardHeader>
-      //     <CardTitle tag="h3">1 MALICIA</CardTitle>
-      //     <CardText>
-      //     <small className="text-muted">13:00-</small>
-      //     <small className="text-muted">13:00</small>
-      //     </CardText>
-      //   </Card>
-      // </div>
     );
   }
 }

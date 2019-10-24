@@ -38,10 +38,10 @@ class Menu extends React.Component {
           prices: data.PRICES
         });
       });
-    
-    const clientName = localStorage.getItem('clientName') ?
-      localStorage.getItem('clientName').toUpperCase() :
-      '';
+
+    const clientName = localStorage.getItem('clientName')
+      ? localStorage.getItem('clientName').toUpperCase()
+      : '';
 
     this.setState({
       client: {
@@ -50,12 +50,6 @@ class Menu extends React.Component {
       }
     });
   }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (prevState.textProvid) {
-      
-  //   }
-  // }
 
   toggle(element) {
     this.setState({
@@ -76,33 +70,31 @@ class Menu extends React.Component {
     };
 
     newOrder.push(newProduct);
-    //console.log(newOrder); 
-    localStorage.setItem('order',  JSON.stringify(newOrder));
+    //console.log(newOrder);
+    localStorage.setItem('order', JSON.stringify(newOrder));
     callback();
   }
 
-  updateVersion(){
+  updateVersion() {
     console.log('update order Version');
-    this.setState({version: this.state.version + 1});
+    this.setState({ version: this.state.version + 1 });
   }
-  updateItem(){
+  updateItem() {
     console.log('update item Version');
-    this.setState({version: this.state.version + 1});
+    this.setState({ version: this.state.version + 1 });
   }
-  updateMenu(){
+  updateMenu() {
     console.log('update menu Version');
-    this.setState({version: this.state.version + 1});
+    this.setState({ version: this.state.version + 1 });
   }
 
   render() {
     const env = {
-      user: this.state.user,
+      user: this.state.user
     };
 
     if (!this.state.menu) {
-      return (
-        <Spinner color="info" style={{ width: '3rem', height: '3rem' }} />
-      );
+      return <Spinner color="info" style={{ width: '3rem', height: '3rem' }} />;
     }
     return (
       <ClientProvider value={env}>

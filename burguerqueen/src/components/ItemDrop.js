@@ -33,7 +33,13 @@ export default class ItemDrop extends React.Component {
             key={i}
             data-item={item}
             toggle={false}
-            onClick={() => this.props.addItem(item, this.state.prices[item], this.props.updateVersion)}
+            onClick={() =>
+              this.props.addItem(
+                item,
+                this.state.prices[item],
+                this.props.updateVersion
+              )
+            }
           >
             <Badge color="dark" data-item={item} pill>
               {item}

@@ -14,7 +14,7 @@ class Boxfinish extends React.Component {
       client: {
         name: '',
         order: '',
-        total: '',
+        total: ''
       },
       version: props.orderVersion,
       itemVersion: props.itemVersion
@@ -45,9 +45,8 @@ class Boxfinish extends React.Component {
         order: order,
         total: total
       }
-    });  
+    });
   }
-
 
   onChange(product, e, price) {
     const order = JSON.parse(localStorage.getItem('order'));
@@ -75,34 +74,32 @@ class Boxfinish extends React.Component {
     this.props.updateVersion();
   }
 
-
   static getDerivedStateFromProps(props, state) {
     const order = JSON.parse(localStorage.getItem('order'));
 
     const clientName = localStorage.getItem('clientName')
-    ? localStorage.getItem('clientName').toUpperCase()
+      ? localStorage.getItem('clientName').toUpperCase()
       : '';
-    
-      let total;
-      if (order) {
-        const orderPrices = order.map(item => {
-          return item.quantity * item.price;
-        });
-        total = orderPrices.reduce((a, b) => a + b, 0);
-      } else {
-        total = 0;
-      }
-    
+
+    let total;
+    if (order) {
+      const orderPrices = order.map(item => {
+        return item.quantity * item.price;
+      });
+      total = orderPrices.reduce((a, b) => a + b, 0);
+    } else {
+      total = 0;
+    }
+
     return {
-      version: props.orderVersion, 
-      itemVersion: props.itemVersion, 
+      version: props.orderVersion,
+      itemVersion: props.itemVersion,
       client: {
-        name: clientName,        
+        name: clientName,
         order: order,
         total: total
       }
     };
-
   }
 
   render() {
@@ -121,10 +118,12 @@ class Boxfinish extends React.Component {
                 <th>Costo</th>
               </tr>
             </thead>
-            <tbody >
+            <tbody>
               {this.state.client.order ? (
                 this.state.client.order.map((item, i) => (
-                  <tr key={`${i}-tb-${this.state.version}-td-${this.state.itemVersion}`}>
+                  <tr
+                    key={`${i}-tb-${this.state.version}-td-${this.state.itemVersion}`}
+                  >
                     <th scope="row">{i + 1}</th>
                     <td className={'product'}>{item.product}</td>
                     <td className={'td-quantity'}>
@@ -148,7 +147,7 @@ class Boxfinish extends React.Component {
                       />
                     </td>
                     <td className={'td-icon'}>
-                      <CardImg width="7px" src={Edit} alt="edit"/>
+                      <CardImg width="7px" src={Edit} alt="edit" />
                     </td>
                   </tr>
                 ))
@@ -171,8 +170,6 @@ class Boxfinish extends React.Component {
             <th>SUBTOTAL</th>
             <th>${this.state.client.total}</th>
           </tr>
-
-
         </Table>
 
         <div className="card-footer text-muted d-flex justify-content-center footer-dark">

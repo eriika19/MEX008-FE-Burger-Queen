@@ -19,47 +19,31 @@ export default class ItemDropdown extends React.Component {
     this.setState({
       menu: this.props.menu,
       prices: this.props.prices,
-      typeFood: this.props.typefood,
+      typeFood: this.props.typefood
     });
   }
 
   setSubsection(data) {
-    this.setState({
-      subsection: data
-  }, () => {
-    this.props.updateMenu();
-  });
-  
-    // this.setState({
-    //   subsection: data
-    // })
-
-    // callback();      
-
-
-    // if (this.state.subsection === data) {
-    //   callback();      
-    // } else {
-    //   this.setState({
-    //     subsection: data
-    //   });
-    //   console.log(this.state.subsection);
-      
-    //   callback(); 
-    // }
+    this.setState(
+      {
+        subsection: data
+      },
+      () => {
+        this.props.updateMenu();
+      }
+    );
   }
 
-  static getDerivedStateFromProps(props, state) {   
+  static getDerivedStateFromProps(props, state) {
     return {
       menu: props.menu,
       prices: props.prices,
       typeFood: props.typefood,
-      version: props.menuVersion, 
+      version: props.menuVersion,
       subsection: state.subsection
     };
-
   }
- 
+
   render() {
     const { typeFood, menu } = this.state;
     if (!typeFood || !menu) {
@@ -80,7 +64,13 @@ export default class ItemDropdown extends React.Component {
             <DropdownItem
               key={`postres-items-${i}`}
               toggle={false}
-              onClick={() => this.props.addItem(item, this.state.prices[item], this.props.updateVersion)}
+              onClick={() =>
+                this.props.addItem(
+                  item,
+                  this.state.prices[item],
+                  this.props.updateVersion
+                )
+              }
             >
               <Badge color="dark" pill>
                 {item}
@@ -109,7 +99,7 @@ export default class ItemDropdown extends React.Component {
               </DropdownItem>
             ))}
             <ItemDrop
-              key={`tb-${this.state.version}-t-${this.state.subsection}`}              
+              key={`tb-${this.state.version}-t-${this.state.subsection}`}
               subsection={this.state.subsection}
               menu={this.state.menu.COMIDA[this.state.subsection]}
               prices={this.state.prices}
@@ -140,7 +130,7 @@ export default class ItemDropdown extends React.Component {
               </DropdownItem>
             ))}
             <ItemDrop
-              key={`tb-${this.state.version}-t-${this.state.subsection}`}                            
+              key={`tb-${this.state.version}-t-${this.state.subsection}`}
               subsection={this.state.subsection}
               menu={this.state.menu.BEBIDAS[this.state.subsection]}
               prices={this.state.prices}

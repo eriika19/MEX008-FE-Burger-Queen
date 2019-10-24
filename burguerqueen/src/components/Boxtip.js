@@ -36,22 +36,14 @@ export default class Boxtip extends React.Component {
                     <td>{recommendation}</td>
                   </tr>
                 ))
-              ) : 
-                (
-                  <Spinner color="info" style={{ width: '3rem', height: '3rem' }} />
-                )
-              }
+              ) : (
+                <Spinner
+                  color="info"
+                  style={{ width: '3rem', height: '3rem' }}
+                />
+              )}
             </tbody>
           </Table>
-          {/*       <ListGroup>
-         {
-             this.state.recommendations ? 
-             this.state.recommendations.map(recommendation => (            
-          <ListGroupItem>{recommendation}</ListGroupItem> 
-          )) :
-          <div>No hay recomendaciones</div>
-        } 
-      </ListGroup> */}
         </div>
         <div className="card-footer text-muted d-flex justify-content-center footer-dark">
           <ModalUI

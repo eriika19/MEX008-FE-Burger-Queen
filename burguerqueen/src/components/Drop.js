@@ -33,10 +33,7 @@ export default class Drop extends React.Component {
         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
         <Btn text={text}  class="btn btn-dark og-hover" data-typefood={typeFood}/>
-        </DropdownToggle>
-
-
-        
+        </DropdownToggle>        
         </Dropdown>
         </DropdownMenu>
     );
